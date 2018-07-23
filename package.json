@@ -1,7 +1,7 @@
 {
-  "name": "my-blog",
+  "name": "my-website",
   "version": "1.0.0",
-  "description": "My first blog as nuxt.js tutorial",
+  "description": "My website with nuxt",
   "author": "Jarno Hänninen",
   "private": true,
   "scripts": {

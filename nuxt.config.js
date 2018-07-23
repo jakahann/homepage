@@ -52,7 +52,7 @@ module.exports = {
     '@nuxtjs/axios',
   ],
   axios: {
-    baseURL: process.env.BASE_URL || 'https://nuxt-blog-6f90c.firebaseio.com',
+    baseURL: process.env.BASE_URL || 'https://hanninen-website.firebaseio.com/',
     credentials: false
   },
 
@@ -69,8 +69,8 @@ module.exports = {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'https://nuxt-blog-6f90c.firebaseio.com',
-    fbAPIKey: 'AIzaSyDfJ0gDCj8lShpuD2Dp3K5i9HW2KimC_QQ'
+    baseUrl: process.env.BASE_URL || 'https://hanninen-website.firebaseio.com/',
+    fbAPIKey: 'AIzaSyC1OTakdwqfYUJ0JuLCoZlj53LWiPOkWYc'
   },
   transition: {
     name: 'fade',
@@ -86,7 +86,7 @@ module.exports = {
   ],
   generate: {
     routes: function () {
-      return axios.get('https://nuxt-blog-6f90c.firebaseio.com/posts.json')
+      return axios.get('https://hanninen-website.firebaseio.com/posts.json')
         .then(res => {
           const routes = []
           for (const key in res.data) {

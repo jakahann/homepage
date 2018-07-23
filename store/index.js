@@ -20,6 +20,7 @@ const createStore = () => {
                 );
                 state.loadedPosts[postIndex] = editedPost;
             },
+           
             setToken(state, token) {
                 state.token = token;
             },
@@ -47,7 +48,7 @@ const createStore = () => {
                 };
                 return this.$axios
                     .$post(
-                        "https://nuxt-blog-6f90c.firebaseio.com/posts.json?auth=" +
+                        "/posts.json?auth=" +
                         vuexContext.state.token,
                         createdPost
                     )
@@ -59,7 +60,7 @@ const createStore = () => {
             editPost(vuexContext, editedPost) {
                 return this.$axios
                     .$put(
-                        "https://nuxt-blog-6f90c.firebaseio.com/posts/" +
+                        "/posts/" +
                         editedPost.id +
                         ".json?auth=" +
                         vuexContext.state.token,

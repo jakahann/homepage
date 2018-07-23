@@ -48,6 +48,8 @@ export default {
       // Navigate back
       this.$router.push("/admin");
     }
+    
+
   }
 };
 </script>

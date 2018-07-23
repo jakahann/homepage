@@ -1,9 +1,18 @@
 <template>
   <div class="home-page">
     <section class="intro">
-      <h1>My website</h1>
-          </section>
-          <PostList :posts="loadedPosts" />
+      <h1>Tervetuloa kotisivuilleni</h1>
+    </section>
+    <section class="content">
+     <div id="text">
+       <h2>WHO AM I!</h2>
+       <p>Lorem Ipsum</p>
+     </div>
+    </section>
+        <!-- <PostList :posts="loadedPosts" /> -->
+    <div class="footer">
+    <p>@MADE BY JARNO, 2018</p>
+  </div>
   </div>
 </template>
 
@@ -14,11 +23,7 @@ export default {
       return this.$store.getters.loadedPosts
     }
   }
-  // data() {
-  //   return {
-  //     loadedPosts: []
-  //   };
-  // },
+  
 };
 </script>
 
@@ -29,10 +34,13 @@ export default {
   position: relative;
   padding: 30px;
   box-sizing: border-box;
-  background-image: url("~assets/images/main-page-background.jpg");
+  background-image: url("~assets/images/main-image.jpg");
   background-position: center;
   background-size: cover;
 }
+
+
+
 
 .intro h1 {
   position: absolute;
@@ -63,4 +71,50 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
+h2 {
+  text-align: center;
+}
+
+.content { 
+ 
+  text-align: center; 
+  margin: 20px;
+ 
+}
+
+a {
+  margin-top: 30px;
+  border: 3px solid grey;
+  padding: 10px;
+  
+}
+
+
+#text {
+  height: 600px;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("~assets/images/mypicture.jpg");
+  background-color: rgb(222, 0, 0, 0.5);
+}
+
+img {
+  max-width: 250px;
+  max-height: 250px;
+  margin: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0px;
+}
+
+.footer p {
+  text-align: center;  
+}
+
 </style>
