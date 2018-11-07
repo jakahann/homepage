@@ -32,6 +32,7 @@ export default {
 <style scoped>
 .header-container {
   height: 60px;
+
 }
 
 .the-header {
@@ -41,7 +42,9 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
+  background-image: url("~assets/images/main-image.jpg");
+  background-position: center;
+  background-size: cover;
   z-index: 100;
   box-sizing: border-box;
   padding: 0 20px;
@@ -54,7 +57,7 @@ export default {
 
 .logo a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .spacer {
