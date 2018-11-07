@@ -4,12 +4,13 @@
       <h1> Tervetuloa sivuilleni</h1>
     </section>
     <div class="content">
-      <p>Moi, olen Jarno Hänninen. Aloitteleva ohjelmistokehittäjä ja olen maisterivaiheen
-         tietotekniikan opiskelija Jyväksylän Yliopistossa.  </p>
+      <p>Moi, olen Jarno Hänninen. Aloitteleva ohjelmistokehittäjä ja olen maisterivaiheen tietotekniikan opiskelija Jyväksylän Yliopistossa.</p>
       <p>Näillä sivuilla esittelen muutamia projekteja, joissa olen ollut mukana kehittäjänä sekä lisään uusia projekteja kun niitä tulee.
-        Muutamia avainsanoja osaamiseeni on: JavaScript, Java, Python, Node.js, RESTful API, Nuxt.js. 
-        Osaamiseni ja taitoni ovat vielä alkuvaiheessa, mutta uskonkin että niin elämässä kuin ohjelmistokehityksessäkin aina on oltava aina 
-        valmis opettelemaan uutta!
+        Muutamia avainsanoja osaamiseeni on: <b>JavaScript, Java, Python, Node.js, RESTful API, Nuxt.js.</b> </p>
+        
+        <p>Osaamiseni ja taitoni ovat vielä alkuvaiheessa,
+        mutta uskonkin että niin elämässä kuin ohjelmistokehityksessäkin aina on oltava aina valmis opettelemaan uutta!
+        Ja olen innokas kehittämään itseäni ja <b><u>oppimaan aina uutta!</u></b>
       </p>
 
       <p>Tämän sivun lisäksi voit löytää minut myös <a href="https://github.com/jakahann">GitHubista</a>
@@ -17,9 +18,7 @@
       <p>Yhteydenotot onnistuvat parhaiten LinkedIn:in tai sähköpostin kautta osoitteeseen: 
         <a href="mailto:jakahann@student.jyu.fi">jakahann@student.jyu.fi</a>
       </p>
-    </div>
-
-  </div>
+    </div></div>
 
 </template>
 
@@ -34,25 +33,26 @@ export default {
 };
 </script>
 
-
 <style scoped>
 
- .home-page {
+.home-page {
   min-height: 100vh;
   background-color:#E8E7E7;
-
  }
 
 .content {
   padding: 30px 30px 0;
   box-sizing: border-box;
   text-align: center;
+  width: 100%;
 }
 
-p {
-  display: block;
+@media (min-width: 768px) {
+  .content {
+    width: 800px;
+    margin: auto;
+  }
 }
-
 
 
 .intro h1 {
@@ -70,13 +70,7 @@ p {
   border: 1px solid black;
   text-align: center;
   width: 50%;
-
 }
-
-
-
-
-
 
 /* .down {
   height: 70vh;
@@ -92,20 +86,15 @@ p {
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
-
-
 }
-*/
-
-/*
 
 @media (min-width: 768px) {
   .intro h1 {
     font-size: 2rem;
   }
-} */
+}
 
-/* .featured-posts {
+.featured-posts {
   display: flex;
   padding: 20px;
   box-sizing: border-box;
@@ -116,16 +105,11 @@ p {
 
 h2 {
   text-align: center;
-} */
+} 
 
-
-
-/* a {
+a {
   margin-top: 30px;
   border: 3px solid grey;
   padding: 10px;
-
 } */
-
-
 </style>

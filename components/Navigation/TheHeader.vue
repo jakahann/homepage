@@ -3,7 +3,7 @@
   <header class="the-header">
     <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
     <div class="logo">
-      <nuxt-link to="/">Jarno Hänninen</nuxt-link>
+      <nuxt-link to="/"><img src="~assets/images/hanninen.png"></nuxt-link>
     </div>
     <div class="spacer"></div>
     <div class="navigation-items">
@@ -33,6 +33,10 @@ export default {
 .header-container {
   height: 60px;
 
+}
+img {
+  max-height: 100px;
+  width: 100px;
 }
 
 .the-header {
