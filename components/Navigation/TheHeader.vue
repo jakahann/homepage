@@ -10,7 +10,7 @@
       <ul class="nav-list">
         <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
+        <!-- <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li> -->
       </ul>
     </div>
   </header>
@@ -46,9 +46,10 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url("~assets/images/main-image.jpg");
+  /* background-image: url("~assets/images/main-image.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  background-color:#202020; 
   z-index: 100;
   box-sizing: border-box;
   padding: 0 20px;

@@ -1,10 +1,14 @@
 <template>
   <div class="home-page">
-    <section class="intro">
+    <!-- <section class="intro">
       <h1> Tervetuloa sivuilleni</h1>
-    </section>
+    </section> -->
     <div class="content">
-      <p>Moi, olen Jarno Hänninen. Aloitteleva ohjelmistokehittäjä ja olen maisterivaiheen tietotekniikan opiskelija Jyväksylän Yliopistossa.</p>
+      <h1>Software Developer</h1>
+        <h2>Who am I?</h2>
+        <h2>How can I get in touch with you?</h2>
+      <!-- <p>Moi, olen Jarno Hänninen. Aloitteleva ohjelmistokehittäjä<br/>
+         ja olen maisterivaiheen tietotekniikan opiskelija Jyväksylän Yliopistossa.</p>
       <p>Näillä sivuilla esittelen muutamia projekteja, joissa olen ollut mukana kehittäjänä sekä lisään uusia projekteja kun niitä tulee.
         Muutamia avainsanoja osaamiseeni on: <b>JavaScript, Java, Python, Node.js, RESTful API, Nuxt.js.</b> </p>
         
@@ -17,7 +21,7 @@
       sekä <a href="https://www.linkedin.com/in/jarnohanninen/">LinkedIn:stä</a></p>
       <p>Yhteydenotot onnistuvat parhaiten LinkedIn:in tai sähköpostin kautta osoitteeseen: 
         <a href="mailto:jakahann@student.jyu.fi">jakahann@student.jyu.fi</a>
-      </p>
+      </p> -->
     </div></div>
 
 </template>
@@ -35,16 +39,44 @@ export default {
 
 <style scoped>
 
+@home-page-font {
+  font-family: homePageFont;
+  src: ("~/assets/fonts/AllerDisplay.ttf")
+}
+h1 {
+  font-family: homePageFont;
+  font-size: 4.5em;
+  color: white;
+  margin: 0px;
+}
+
+
+h2{
+  font-family: homePageFont;
+  font-size: 3.0em;
+  color: white;
+  margin: 0px;  
+  opacity: 0.2;
+}
+
 .home-page {
   min-height: 100vh;
-  background-color:#E8E7E7;
+  /* background-color:#E8E7E7; */
+  background-image: url("~assets/images/main-back.jpg");
+  background-position: center;
+  background-size: cover;
  }
 
 .content {
   padding: 30px 30px 0;
   box-sizing: border-box;
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
+}
+
+.content p {
+  text-align: justify;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
