@@ -52,11 +52,7 @@ img {
   position: fixed;
   height: 60px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  /* background-image: url("~assets/images/main-image.jpg");
-  background-position: center;
-  background-size: cover; */
   background-color: rgb(34, 34, 34);
   z-index: 100;
   box-sizing: border-box;

@@ -42,17 +42,18 @@ export default {
 .sidenav-backdrop {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color:rgb(34, 34, 34) ;
   z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0.7;
 }
 
 .sidenav {
   height: 100%;
   width: 300px;
-  background-color: white;
+  background-color: rgb(34, 34, 34);
   z-index: 10000;
   position: fixed;
   top: 0;
@@ -78,16 +79,19 @@ export default {
 
 .nav-item {
   margin: 20px 0;
+  
 }
 
 .nav-item a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1.5rem;
 }
 
 .nav-item a:hover,
 .nav-item a:active {
-  color: red;
+  color: grey;
+  border-bottom: 2px solid gray;
+
 }
 </style>

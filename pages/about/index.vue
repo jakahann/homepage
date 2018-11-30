@@ -1,9 +1,11 @@
 <template>
   <div>
     <div class="about-page">
-      <div class="image"><img src="~assets/images/mypicture.jpg" alt=""></div>
+      <!-- <div class="image"><img src="~assets/images/mypicture.jpg" alt=""></div> -->
 
       <div class="whoami">
+        
+        <img src="~assets/images/mypicture.jpg" alt="">
         <h1>Who am I?</h1>
         <p>
           My name is Jarno Hänninen and I'm a aspiring software developer.
@@ -26,7 +28,7 @@
         </p>
 
         <p>
-          I'm also a life long learner. I's an aspiring developer I do not consider myself as a professional yet and
+          I'm also a life long learner. As an aspiring developer I do not consider myself as a professional yet and
           I see the limitations of my capablities for now. But I do belive that it's not a question about what I can right now,
           but it's what I'm ready to learn. I belive that we learn all the time and each day we have a opportunity to learn new things
           about life, programming and everyhting!
@@ -53,6 +55,7 @@
            medicinal care at the childrens home within the qualifications of a nurse.
           </p>
    </div>
+   
 <div class="andmore">
         <h1>What else do I do?</h1>
         <p>
@@ -66,7 +69,7 @@
           I'm also volunteering usually at our churches summer camp for a week in June-July. In addition to working with kids I also do translations (finnish to english) for 
           our international parishioners. 
         </p>
-      </div>
+      </div> 
 
 
 
@@ -78,49 +81,89 @@
 .about-page {
   min-height: 100vh;
   min-width: 100vh;
-  padding: 30px;
+  padding: 2%;
   background-color:#0a0a0a;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
-.image {
-  margin-top: 90px;
-  width: 20%;  
-  margin-right: 1%;
-}
+
 .whoami {
-width: 35%;
-margin-right: 10px;
-height: auto;
-margin-bottom: 1px;
+ max-width: 50vw;
+ max-height: 60vh;
 }
-.notanerd {
-  margin-top: 150px;
-  margin-left: 10px;
-  width: 35%;
 
-}
-.andmore {
-  width: 35%;
-  margin-left: 20%;
-  
-
-  }
-img {
-  max-width: 100%;
-  border-radius: 40px;
+.whoami img {
   max-height: 100%;
-
-
+  border-radius: 40px;
+  float: left;
+  margin-right: 5%;
 }
+
+.whoami p {
+  max-height: 100%;
+  padding-right: 5%; 
+  
+}
+
+
+.notanerd {
+ max-width: 30vw;
+ max-height: 60wh;
+}
+
+.notanerd p {
+ max-width: 100%;
+}
+
+.andmore {
+  max-width: 100%;
+  margin-top: 5%;
+}
+
+.andmore p {
+  text-align: justify;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
 h1,
 p {
-  /* font-family: homePageFont; */
   color: gray;
   text-align: justify;
 }
+
 h1 {
-  text-align: center
+  text-align: center;
 }
+
+@media screen and (max-width: 1830px) {
+  .about-page {
+    padding-left: 50%;
+    padding-right: 50%;
+    align-content: center;
+    display: block;
+  }
+
+  .whoami {
+    /* min-width: 100%; */
+  }
+  .whoami img {
+    max-width: 50%;
+    float: left;
+  }
+  .whoami h1 {
+    float: left;
+    min-width: 100%;
+  }
+
+  .whoami p {
+    float: left;
+    max-width: 75%;
+  }
+
+}
+
+
 </style>
