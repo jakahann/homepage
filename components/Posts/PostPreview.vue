@@ -48,15 +48,15 @@ export default {
 
 <style scoped>
 .post-preview {
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 2px #ccc;
-  background-color: white;
+  border: 1px solid white;
+  /* box-shadow: 0 2px 2px gray; */
+  background-color: #222222;
   width: 90%;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: gray;
 }
 
 @media (min-width: 850px) {
@@ -68,7 +68,7 @@ a {
 
 .post-thumbnail {
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   background-position: center;
   background-size: cover;
 }
@@ -80,6 +80,7 @@ a {
 
 a:hover .post-content,
 a:active .post-content {
-  background-color: #ccc;
+  background-color: rgb(121, 113, 113);
+  color: rgb(212, 204, 204);
 }
 </style>

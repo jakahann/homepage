@@ -4,13 +4,14 @@
             <h1 class="post-title">{{ loadedPost.title }}</h1>
             <div class="post-details">
                 <div class="post-detail">Last updated on {{ loadedPost.updatedDate | date }}</div>
-                <div class="post-detail">Written by {{ loadedPost.author }}</div>
+                <!-- <div class="post-detail">Written by {{ loadedPost.author }}</div> -->
             </div>
+          <a v-bind:href="loadedPost.thumbnail"><img class="project-thumbnail" v-bind:src="loadedPost.thumbnail" alt="Kuvakaappaus sovelluksesta."></a>
             <p class="post-content">{{ loadedPost.content }}</p>
         </section>
-        <section class="post-feedback">
+        <!-- <section class="post-feedback">
            <p>Let me know what you think about the post, send a mail to <a href="mailto:feedback@my-awesome-domain.com">feedback@my-awesome-domain.com</a>.</p>
-        </section>
+        </section> -->
     </div>
 </template>
 

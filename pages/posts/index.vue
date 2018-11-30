@@ -18,8 +18,10 @@ export default {
 
 <style scoped>
 .posts-page {
+  background-color: #0A0A0A;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 </style>
