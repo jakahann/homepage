@@ -32,7 +32,7 @@
           about life, programming and everyhting!
         </p>
       </div>
-    <div class="whatelse">
+    <div class="notanerd">
         <h1>Not just a computer nerd?</h1>
         <p>
           Besided being a computer science student, I'm actually a Registered Nurse too. That's right, a nurse!
@@ -86,8 +86,8 @@
 
 .image {
   margin-top: 90px;
-  width: 20%;
-  margin-right: 20px;
+  width: 20%;  
+  margin-right: 1%;
 }
 .whoami {
 width: 35%;
@@ -95,21 +95,23 @@ margin-right: 10px;
 height: auto;
 margin-bottom: 1px;
 }
-.whatelse {
+.notanerd {
   margin-top: 150px;
   margin-left: 10px;
   width: 35%;
 
 }
 .andmore {
-  margin-left: 295px;
   width: 35%;
-  position: relative;
-  bottom: 100px;
-}
+  margin-left: 20%;
+  
+
+  }
 img {
   max-width: 100%;
-    border-radius: 40px;
+  border-radius: 40px;
+  max-height: 100%;
+
 
 }
 h1,
