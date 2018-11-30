@@ -4,24 +4,9 @@
       <h1> Tervetuloa sivuilleni</h1>
     </section> -->
     <div class="content">
-      <h1>Software Developer</h1>
-        <h2>Who am I?</h2>
-        <h2>How can I get in touch with you?</h2>
-      <!-- <p>Moi, olen Jarno Hänninen. Aloitteleva ohjelmistokehittäjä<br/>
-         ja olen maisterivaiheen tietotekniikan opiskelija Jyväksylän Yliopistossa.</p>
-      <p>Näillä sivuilla esittelen muutamia projekteja, joissa olen ollut mukana kehittäjänä sekä lisään uusia projekteja kun niitä tulee.
-        Muutamia avainsanoja osaamiseeni on: <b>JavaScript, Java, Python, Node.js, RESTful API, Nuxt.js.</b> </p>
-        
-        <p>Osaamiseni ja taitoni ovat vielä alkuvaiheessa,
-        mutta uskonkin että niin elämässä kuin ohjelmistokehityksessäkin aina on oltava aina valmis opettelemaan uutta!
-        Ja olen innokas kehittämään itseäni ja <b><u>oppimaan aina uutta!</u></b>
-      </p>
-
-      <p>Tämän sivun lisäksi voit löytää minut myös <a href="https://github.com/jakahann">GitHubista</a>
-      sekä <a href="https://www.linkedin.com/in/jarnohanninen/">LinkedIn:stä</a></p>
-      <p>Yhteydenotot onnistuvat parhaiten LinkedIn:in tai sähköpostin kautta osoitteeseen: 
-        <a href="mailto:jakahann@student.jyu.fi">jakahann@student.jyu.fi</a>
-      </p> -->
+      <h1>Jarno Hänninen</h1>
+        <h2>Software Developer</h2>
+       
     </div></div>
 
 </template>
@@ -44,6 +29,8 @@ export default {
   src: ("~/assets/fonts/AllerDisplay.ttf")
 }
 h1 {
+  position: relative;
+  left: 16%;
   font-family: homePageFont;
   font-size: 4.5em;
   color: white;
@@ -52,7 +39,9 @@ h1 {
 
 
 h2{
+  position: relative;
   font-family: homePageFont;
+  left: 22%;
   font-size: 3.0em;
   color: white;
   margin: 0px;  
@@ -61,17 +50,14 @@ h2{
 
 .home-page {
   min-height: 100vh;
-  /* background-color:#E8E7E7; */
   background-image: url("~assets/images/main-back.jpg");
   background-position: center;
   background-size: cover;
  }
 
 .content {
-  padding: 30px 30px 0;
-  box-sizing: border-box;
-  /* text-align: center; */
-  width: 100%;
+  position: relative;
+  top: 100px;
 }
 
 .content p {
