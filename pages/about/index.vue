@@ -2,17 +2,15 @@
   <div>
     <div class="about-page">
       <!-- <div class="image"><img src="~assets/images/mypicture.jpg" alt=""></div> -->
-
       <div class="whoami">
-        
-        <img src="~assets/images/mypicture.jpg" alt="">
+        <img src="~assets/images/mypicture.jpg" alt>
         <h1>Who am I?</h1>
         <p>
           My name is Jarno Hänninen and I'm a aspiring software developer.
           I'm currently studying in masters program for Computer Sciences
           at the university of Jyväskylä. I'm working as an research assistant / software developer
           at university at a project called Watson Health Cloud Finland. The project is finishing up
-           and I'm  open for employment opportunities.
+          and I'm open for employment opportunities.
         </p>
 
         <p>
@@ -34,7 +32,7 @@
           about life, programming and everyhting!
         </p>
       </div>
-    <div class="notanerd">
+      <div class="notanerd">
         <h1>Not just a computer nerd?</h1>
         <p>
           Besided being a computer science student, I'm actually a Registered Nurse too. That's right, a nurse!
@@ -47,32 +45,29 @@
           thesis on families experiences on early intervetions within families with infants. After finishing my thesis I moved to Tampere
           where I had the opportunity to work at the childrens traumapsychiatric ward with some of the leading experts in the field in
           Finland.
-          </p>
-          <p>
-           After moving to Jyväskylä to study computer sciences I started working at a childrens home.
-           I mostly did short-term gigs in the home and few longer ones too. Currently I'm doing an occasional shift
-           to the home while working at the university as an research assistant. I'm also in charge of supervising and developing the
-           medicinal care at the childrens home within the qualifications of a nurse.
-          </p>
-   </div>
-   
-<div class="andmore">
+        </p>
+        <p>
+          After moving to Jyväskylä to study computer sciences I started working at a childrens home.
+          I mostly did short-term gigs in the home and few longer ones too. Currently I'm doing an occasional shift
+          to the home while working at the university as an research assistant. I'm also in charge of supervising and developing the
+          medicinal care at the childrens home within the qualifications of a nurse.
+        </p>
+      </div>
+
+      <div class="andmore">
         <h1>What else do I do?</h1>
         <p>
-          On my free time I try to keep my self in shape by running. Currently I have ran one half marathon in 2017 and my goal is to finish 
-          another in 2019 and a full marathon. For me running as a perfect way of clearing my head but also a good way to find a balance to 
-          the whole lot of sitting software development requires. 
+          On my free time I try to keep my self in shape by running. Currently I have ran one half marathon in 2017 and my goal is to finish
+          another in 2019 and a full marathon. For me running as a perfect way of clearing my head but also a good way to find a balance to
+          the whole lot of sitting software development requires.
         </p>
         <p>
-          In addition to running I also do volunteer work. I work at my local church with kids and youth. I'm also a volunteer leader for our Sunday service 
+          In addition to running I also do volunteer work. I work at my local church with kids and youth. I'm also a volunteer leader for our Sunday service
           group. Organizing and maintaining the rosters and planning the structure for the year is part of what I do in addition to participating as a teacher.
-          I'm also volunteering usually at our churches summer camp for a week in June-July. In addition to working with kids I also do translations (finnish to english) for 
-          our international parishioners. 
+          I'm also volunteering usually at our churches summer camp for a week in June-July. In addition to working with kids I also do translations (finnish to english) for
+          our international parishioners.
         </p>
-      </div> 
-
-
-
+      </div>
     </div>
   </div>
 </template>
@@ -82,16 +77,15 @@
   min-height: 100vh;
   min-width: 100vh;
   padding: 2%;
-  background-color:#0a0a0a;
+  background-color: #0a0a0a;
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
 
-
 .whoami {
- max-width: 50vw;
- max-height: 60vh;
+  max-width: 50vw;
+  max-height: 60vh;
 }
 
 .whoami img {
@@ -103,18 +97,16 @@
 
 .whoami p {
   max-height: 100%;
-  padding-right: 5%; 
-  
+  padding-right: 5%;
 }
 
-
 .notanerd {
- max-width: 30vw;
- max-height: 60wh;
+  max-width: 30vw;
+  max-height: 60wh;
 }
 
 .notanerd p {
- max-width: 100%;
+  max-width: 100%;
 }
 
 .andmore {
@@ -138,19 +130,32 @@ h1 {
   text-align: center;
 }
 
-@media screen and (max-width: 1830px) {
+@media screen and (max-width: 1570px) {
+  .whoami {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1336px) {
+  .whoami {
+    margin-bottom: 25%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .about-page {
-    padding-left: 50%;
-    padding-right: 50%;
-    align-content: center;
+    min-height: 100%;
+    min-width: 100%;
     display: block;
+    overflow: scroll;
   }
 
   .whoami {
-    /* min-width: 100%; */
+    min-width: 70vw;
   }
+
   .whoami img {
-    max-width: 50%;
+    max-width: 75%;
     float: left;
   }
   .whoami h1 {
@@ -160,10 +165,29 @@ h1 {
 
   .whoami p {
     float: left;
-    max-width: 75%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .notanerd {
+    float: left;
+    min-width: 70vw;
   }
 
+  .andmore {
+    float: left;
+    min-width: 70vw;
+    max-width: 30vw;
+  }
+
+  .andmore p {
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
+
+
+  
+
+
 }
-
-
 </style>
