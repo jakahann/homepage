@@ -37,7 +37,6 @@ export default {
 .content {
   align-content: center;
   position: relative;
-  top: 10%;
   
   
 }
@@ -54,11 +53,19 @@ h2 {
   opacity: 0.2;
 }
 
-/* @media screen and (max-width: 1900px){
+
+ @media screen and (max-width: 1200px){
   .content {
-    margin-top: 5vw;
+   top: 10%;
   }
-} */
+}
+
+
+ @media screen and (max-width: 500px){
+  .content {
+   display: none;
+  }
+} 
 /*
 @media screen and (max-width: 500px) {
   h1,
