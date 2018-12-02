@@ -18,7 +18,7 @@ export default {
 
 
 .home-page {
-  background-image: url("~assets/images/main-back.jpg");
+  background-image: url("~assets/images/main-test.jpg");
   width: 100vw;
   height: 100vh;
   background-position: center;
