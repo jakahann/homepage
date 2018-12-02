@@ -1,9 +1,6 @@
 <template>
   <div class="home-page">
-   <!-- <div class="content">
-      <h1>Jarno Hänninen</h
-      <h2>Software Developer</h2>
-    </div> -->
+   
   </div>
 </template>
 
@@ -22,8 +19,8 @@ export default {
 
 .home-page {
   background-image: url("~assets/images/main-test.jpg");
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   
