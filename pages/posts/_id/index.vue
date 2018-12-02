@@ -23,7 +23,7 @@ export default {
         loadedPost: context.payload.postData
       }
     }
-    return context.app.$axios.$get('/posts/' + context.params.id + '.json')
+    return context.app.$axios.$get('/projects/' + context.params.id + '.json')
       .then(data => {
         return {
           loadedPost: data

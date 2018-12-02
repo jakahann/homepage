@@ -86,7 +86,7 @@ module.exports = {
   ],
   generate: {
     routes: function () {
-      return axios.get('https://hanninen-website.firebaseio.com/posts.json')
+      return axios.get('https://hanninen-website.firebaseio.com/projects.json')
         .then(res => {
           const routes = []
           for (const key in res.data) {

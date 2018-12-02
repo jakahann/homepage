@@ -18,7 +18,7 @@ export default {
   asyncData(context) {
     return context.app.$axios
       .$get(
-        process.env.baseUrl + "/posts/" +
+        process.env.baseUrl + "/projects/" +
         context.params.postId +
         ".json"
         )
