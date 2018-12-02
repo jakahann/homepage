@@ -1,17 +1,15 @@
 <template>
     <div class="single-post-page">
         <section class="post">
-            <h1 class="post-title">{{ loadedPost.title }}</h1>
-            <div class="post-details">
-                <div class="post-detail">Last updated on {{ loadedPost.updatedDate | date }}</div>
-                <!-- <div class="post-detail">Written by {{ loadedPost.author }}</div> -->
-            </div>
-          <a v-bind:href="loadedPost.thumbnail"><img class="project-thumbnail" v-bind:src="loadedPost.thumbnail" alt="Kuvakaappaus sovelluksesta."></a>
-            <p class="post-content">{{ loadedPost.content }}</p>
+                <h1> {{loadedPost.title}} </h1>
+                <p> {{loadedPost.content1}} </p>
+                <h2>Made with</h2>
+                <p> {{loadedPost.content2}} </p>
+                <h2>Making of</h2>
+                <p> {{loadedPost.content3}} </p>
+                <p v-if="loadedPost.github">Here you can find the source code for the project <a v-bind:href="loadedPost.github">GitHub</a></p>
+                <img v-bind:src="loadedPost.thumbnail"  alt="screenshot_project">
         </section>
-        <!-- <section class="post-feedback">
-           <p>Let me know what you think about the post, send a mail to <a href="mailto:feedback@my-awesome-domain.com">feedback@my-awesome-domain.com</a>.</p>
-        </section> -->
     </div>
 </template>
 
@@ -43,51 +41,28 @@ export default {
   padding: 30px;
   text-align: center;
   box-sizing: border-box;
+  background-color: #0A0A0A;
 }
 
 .post {
   width: 100%;
+  color: gray;
+  text-align: justify;
 }
 
+h1,h2{
+  text-align: center;
+}
+
+img {
+  margin-top: 5%;
+  width: 100%;
+  border: 2px solid gray;
+}
 @media (min-width: 768px) {
   .post {
     width: 600px;
     margin: auto;
   }
-}
-
-.post-title {
-  margin: 0;
-}
-
-.post-details {
-  padding: 10px;
-  box-sizing: border-box;
-  border-bottom: 3px solid #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .post-details {
-    flex-direction: row;
-  }
-}
-
-.post-detail {
-  color: rgb(88, 88, 88);
-  margin: 0 10px;
-}
-
-.post-feedback a {
-  color: red;
-  text-decoration: none;
-}
-
-.post-feedback a:hover,
-.post-feedback a:active {
-  color: salmon;
 }
 </style>
