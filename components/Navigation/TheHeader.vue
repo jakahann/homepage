@@ -13,8 +13,6 @@
           <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/projects">Projects</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
-
-          <!-- <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li> -->
         </ul>
       </div>
     </header>

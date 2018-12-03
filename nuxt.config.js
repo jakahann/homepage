@@ -13,7 +13,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'my-website' }
+      { hid: 'description', name: 'description', content: 'personal website' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -81,7 +81,7 @@ module.exports = {
   // }
   serverMiddleware: [
     bodyParser.json(),
-    '~/api'
+    // '~/api'
 
   ],
   generate: {
@@ -91,7 +91,7 @@ module.exports = {
           const routes = []
           for (const key in res.data) {
             routes.push({
-              route: '/posts/' + key,
+              route: '/projects/' + key,
               payload: { postData: res.data[key] }
             })
           }
