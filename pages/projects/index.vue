@@ -5,9 +5,9 @@
       Check them out for more information. </p> 
     <p>If you are interested to hear more about me and my projects. <br/> Head over to <nuxt-link to="/contact">Contact</nuxt-link> 
     page to learn how to get in touch with me.</p>
-    <div class="posts-page">
+    <div class="projects-page">
 
-        <PostList :posts="loadedPosts" />
+        <ProjectList :projects="loadedProjects" />
     </div>
     </section>
 </template>
@@ -15,8 +15,8 @@
 <script>
 export default {
   computed: {
-    loadedPosts() {
-      return this.$store.getters.loadedPosts
+    loadedProjects() {
+      return this.$store.getters.loadedProjects
     }
   }
 };
@@ -41,7 +41,7 @@ p {
   text-align: center;
 }
 
-.posts-page {
+.projects-page {
   border-top: 5px groove gray;
   background-color: #0A0A0A;
   min-height: 100vh;

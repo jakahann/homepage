@@ -1,10 +1,10 @@
 <template>
-    <nuxt-link :to="postLink" class="post-preview">
+    <nuxt-link :to="projectLink" class="project-preview">
               <article>
                 <div
-                class="post-thumbnail"
+                class="project-thumbnail"
                 :style="{backgroundImage: 'url(' + thumbnail + ')'}"></div>
-                <div class="post-content">
+                <div class="project-content">
                   <h1>{{ title }}</h1>
                   <p>{{ previewText }}</p>
                 </div>
@@ -14,15 +14,11 @@
 
 <script>
 export default {
-    name: 'PostPreview',
+    name: 'ProjectPreview',
     props: {
         id: {
             type: String,
             required: true
-        },
-        isAdmin: {
-          type: Boolean,
-          required: true
         },
         title: {
             type: String,
@@ -38,8 +34,8 @@ export default {
         }
     },
     computed: {
-      postLink() {
-        return this.isAdmin ? '/admin/' + this.id : '/projects/' + this.id
+      projectLink() {
+        return '/projects/' + this.id
       }
     }
 }
@@ -47,7 +43,7 @@ export default {
 
 
 <style scoped>
-.post-preview {
+.project-preview {
   border: 1px solid white;
   /* box-shadow: 0 2px 2px gray; */
   background-color: #222222;
@@ -60,26 +56,26 @@ a {
 }
 
 @media (min-width: 850px) {
-  .post-preview {
+  .project-preview {
     width: 400px;
     margin: 10px;
   }
 }
 
-.post-thumbnail {
+.project-thumbnail {
   width: 100%;
   min-height: 200px;
   background-position: center;
   background-size: cover;
 }
 
-.post-content {
+.project-content {
   padding: 10px;
   text-align: center;
 }
 
-a:hover .post-content,
-a:active .post-content {
+a:hover .project-content,
+a:active .project-content {
   background-color: rgb(121, 113, 113);
   color: rgb(212, 204, 204);
 }

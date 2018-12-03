@@ -1,14 +1,13 @@
 import Vuex from "vuex";
-import Cookie from "js-cookie";
 
 const createStore = () => {
     return new Vuex.Store({
         state: {
-            loadedPosts: [],
+            loadedProjects: [],
         },
         mutations: {
-            setPosts(state, posts) {
-                state.loadedPosts = posts;
+            setPosts(state, projects) {
+                state.loadedProjects = projects;
             },
 
         },
@@ -26,14 +25,14 @@ const createStore = () => {
                     .catch(e => context.error(e));
             },
 
-            setPosts(vuexContext, posts) {
-                vuexContext.commit("setPosts", posts);
+            setPosts(vuexContext, projects) {
+                vuexContext.commit("setPosts", projects);
             },
 
         },
         getters: {
-            loadedPosts(state) {
-                return state.loadedPosts;
+            loadedProjects(state) {
+                return state.loadedProjects;
             },
         }
     });

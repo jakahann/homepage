@@ -92,7 +92,7 @@ module.exports = {
           for (const key in res.data) {
             routes.push({
               route: '/projects/' + key,
-              payload: { postData: res.data[key] }
+              payload: { projectData: res.data[key] }
             })
           }
           return routes
