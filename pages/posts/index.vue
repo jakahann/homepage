@@ -2,8 +2,9 @@
 <section class="projects">
     <h1>Projects</h1>
     <p>These are projects I have had the privilege to be part in making. Some are a group effort and some are my own productions. 
-      check them out for more information. </p> 
-    <p>If you are interested to hear more about me and my projects. Head over to my <nuxt-link to="/contact">Contact</nuxt-link> page on how to get in touch with me.</p>
+      Check them out for more information. </p> 
+    <p>If you are interested to hear more about me and my projects. <br/> Head over to <nuxt-link to="/contact">Contact</nuxt-link> 
+    page to learn how to get in touch with me.</p>
     <div class="posts-page">
 
         <PostList :posts="loadedPosts" />
