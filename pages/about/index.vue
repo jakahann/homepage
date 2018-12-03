@@ -7,14 +7,14 @@
         <h1>Who am I?</h1>
         <p>
           My name is Jarno Hänninen and I'm a aspiring software developer.
-          I'm currently studying for my masters degree in Computer Sciences
-          at the university of Jyväskylä. I'm working as an research assistant / software developer
-          at university at a project called Watson Health Cloud Finland. The project is finishing up
+          I'm currently studying for my masters degree in Computer Science
+          at the university of Jyväskylä. I'm also working as an research assistant / software developer
+          at the university in a project called Watson Health Cloud Finland. The project is finishing up at the end of 2018
           and I'm open for employment opportunities.
         </p>
 
         <p>
-          I'm still in the junior phase of my career and thus seeking employment in a position where
+          I'm still in the junior stages of my career and thus seeking employment in a position where
           I can learn from various masters of the field and hone my programming skills, and hopefully one day
           be able to share my skills with starting programmers. Lately I have been focussing on various web-development
           technologies and frameworks like Javascript, Node.js, Vue.js and Nuxt.js.
@@ -23,14 +23,14 @@
         <p>
           My area of interests is not limited to web technologies and I am intererested in working
           with different languages and frameworks. I'm still seeking my true love as a coder and I'm not
-          limiting my search a narrow area but open to all possiblities and opportunities.
+          narrowing my search to any special area but open to all possiblities and opportunities.
         </p>
 
         <p>
           I do not consider myself yet to be a professional as a software developer but as a junior developer with potential to
           achieve great things with right kind of mentoring. As a life long learner I believe there is alway room for improvement
           and learning new things. And as a developer, I think I shouldn't be asked what I can right now but what can I learn?
-          Learn something new everyday about life, programming and everything!
+          I try to learn something new everyday about life, programming and everything!
         </p>
       </div>
       <div class="notanerd">
