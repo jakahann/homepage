@@ -7,8 +7,13 @@
                 <p> {{loadedPost.content2}} </p>
                 <h2>Making of</h2>
                 <p> {{loadedPost.content3}} </p>
-                <p v-if="loadedPost.github">Here you can find the source code for the project <a v-bind:href="loadedPost.github">GitHub</a></p>
+                <p v-if="loadedPost.github">Here you can find the source code for the project <a v-bind:href="loadedPost.github">GitHub</a>.</p>
+                <p v-if="loadedPost.link">The project can be found from <a v-bind:href="loadedPost.link">here</a>.</p>
+
                 <img v-bind:src="loadedPost.thumbnail"  alt="screenshot_project">
+                <img v-if="loadedPost.image" v-bind:src="loadedPost.image"  alt="screenshot_project">
+
+
         </section>
     </div>
 </template>
