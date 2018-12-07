@@ -1,3 +1,4 @@
+// Define how projects are viewed as a list
 <template>
      <section class="project-list">
             <ProjectPreview

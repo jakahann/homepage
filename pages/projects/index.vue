@@ -6,7 +6,7 @@
     <p>If you are interested to hear more about me and my projects. <br/> Head over to <nuxt-link to="/contact">Contact</nuxt-link> 
     page to learn how to get in touch with me.</p>
     <div class="projects-page">
-
+         <!-- Shows the projects stored in Vuex store -->
         <ProjectList :projects="loadedProjects" />
     </div>
     </section>

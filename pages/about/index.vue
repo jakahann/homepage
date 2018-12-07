@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="about-page">
-      <!-- <div class="image"><img src="~assets/images/mypicture.jpg" alt=""></div> -->
       <div class="whoami">
         <img src="~assets/images/mypicture.jpg" alt>
         <h1>Who am I?</h1>

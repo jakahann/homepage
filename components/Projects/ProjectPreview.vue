@@ -1,3 +1,4 @@
+// Define how the preview looks
 <template>
     <nuxt-link :to="projectLink" class="project-preview">
               <article>

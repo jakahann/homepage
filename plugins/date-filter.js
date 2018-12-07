@@ -1,5 +1,5 @@
 import Vue from 'vue'
-
+//Not currently used -> handling date formating
 const months = [
   "January",
   "February",

@@ -1,4 +1,5 @@
 import Vuex from "vuex";
+//Create Vuex.store for projects
 
 const createStore = () => {
     return new Vuex.Store({

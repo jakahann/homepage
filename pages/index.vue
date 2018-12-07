@@ -57,37 +57,5 @@ h2 {
    display: none;
   }
 } 
-/*
-@media screen and (max-width: 500px) {
-  h1,
-  h2 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 2700px) {
-  
-  h2 {
-    display: none;
-  }
-}
-
-
-@media screen and (max-height: 900px ) {
-  h2 {
-    display: none;
-  }
-}
-
-@media screen and (max-height: 750px ) {
-  .content {
-    top: 1vh;
-  }
-}
-@media screen and (max-height: 600px ) {
-  .content {
-    display: none;
-  }
-}*/
 
 </style>
